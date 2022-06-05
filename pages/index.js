@@ -12,7 +12,9 @@ function Home(prop) {
 
 export async function getServerSideProps() {
   // Fetch data from external API
-  const res = await fetch(`http://localhost:3000/api/new/thing`);
+  const res = await fetch(
+    `https://https://nextjstest-theta-six.vercel.app/api/new/thing`
+  );
   const data = await res.json();
   console.log(data);
 
